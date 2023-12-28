@@ -1,6 +1,6 @@
 Name:           perl-Date-Holidays-NYSE
-Version:        0.01
-Release:        1%{?dist}
+Version:        0.02
+Release:        2%{?dist}
 Summary:        Date::Holidays Adapter for New York Stock Exchange (NYSE) holidays
 License:        mit
 Group:          Development/Libraries

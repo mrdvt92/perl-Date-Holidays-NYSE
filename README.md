@@ -41,7 +41,7 @@ Returns a holiday name or undef given three arguments (year, month, day).
       print "Not a NYSE Holiday\n";
     }
 
-## is\_us\_holiday
+## is\_nyse\_holiday
 
 Wrapper around is\_holiday function per the API specification. See ["is\_holiday1" in Date::Holidays](https://metacpan.org/pod/Date::Holidays#is_holiday1)
 
@@ -58,7 +58,7 @@ Returns a hash reference containing all of the holidays in the specified year. T
       print "Year: $year, Month: $month, Day: $day, Name: $name\n";
     }
 
-## us\_holidays
+## nyse\_holidays
 
 Wrapper around holidays function per the API specification. See ["holidays1" in Date::Holidays](https://metacpan.org/pod/Date::Holidays#holidays1)
 

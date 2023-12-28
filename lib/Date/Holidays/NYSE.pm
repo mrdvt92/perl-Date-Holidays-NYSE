@@ -2,11 +2,11 @@ package Date::Holidays::NYSE;
 use strict;
 use warnings;
 use base qw{Exporter};
-use POSIX; #strftime to calculate wday
+use POSIX (); #strftime to calculate wday
 use Date::Calc 5.0 (); #to calculate Easter and thus Good Friday
 
-our @EXPORT_OK = qw(is_holiday holidays is_us_holiday us_holidays);
-our $VERSION   = '0.01';
+our @EXPORT_OK = qw(is_holiday holidays is_nyse_holiday nyse_holidays);
+our $VERSION   = '0.02';
 
 =head1 NAME
 
@@ -112,13 +112,13 @@ sub is_holiday {
   }
 }
 
-=head2 is_us_holiday
+=head2 is_nyse_holiday
 
 Wrapper around is_holiday function per the API specification. See L<Date::Holidays/is_holiday1>
 
 =cut
 
-sub is_us_holiday {return is_holiday(@_)};
+sub is_nyse_holiday {return is_holiday(@_)};
 
 =head2 holidays
 
@@ -150,13 +150,13 @@ sub holidays {
   return \%holidays;
 }
 
-=head2 us_holidays
+=head2 nyse_holidays
 
 Wrapper around holidays function per the API specification. See L<Date::Holidays/holidays1>
 
 =cut
 
-sub us_holidays {return holidays(@_)};
+sub nyse_holidays {return holidays(@_)};
 
 =head1 TODO
 

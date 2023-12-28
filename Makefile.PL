@@ -3,12 +3,13 @@ WriteMakefile(
     NAME            => 'Date::Holidays::NYSE',
     VERSION_FROM    => 'lib/Date/Holidays/NYSE.pm',
     PREREQ_PM       => {
-                        'POSIX'    => 0,
-                        'Exporter' => 0,
+                        'POSIX'      => 0,
+                        'Exporter'   => 0,
                         'Date::Calc' => 5.0, #for Add_Delta_Days
                        },
     ABSTRACT_FROM  => 'lib/Date/Holidays/NYSE.pm',
     AUTHOR         => 'Michael R. Davis',
+    LICENSE        => 'MIT',
     'META_MERGE'   => {
                        'meta-spec' => {
                                        'version' => 2
