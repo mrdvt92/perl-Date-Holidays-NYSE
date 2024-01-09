@@ -85,11 +85,11 @@ sub is_holiday {
     return 'Good Friday';
   } elsif ($month == 5 and $day >= 25 and $day <= 31 and $wday == 1) {                   #Last Monday in May
     return 'Memorial Day';
-  } elsif ($year >= 2022 and $month == 6 and $day == 18 and $wday == 5) {                #Juneteenth on a Friday (Assumption)
+  } elsif ($year >= 2022 and $month == 6 and $day == 18 and $wday == 5) {                #Juneteenth on a Friday
     return 'Juneteenth National Independence Day Observed';
   } elsif ($year >= 2022 and $month == 6 and $day == 19 and $wday >= 1 and $wday <= 5) { #Juneteenth on a weekday
     return 'Juneteenth National Independence Day';
-  } elsif ($year >= 2022 and $month == 6 and $day == 20 and $wday == 1) {                #Juneteenth on a Monday (Assumption)
+  } elsif ($year >= 2022 and $month == 6 and $day == 20 and $wday == 1) {                #Juneteenth on a Monday
     return 'Juneteenth National Independence Day Observed';
   } elsif ($month == 7 and $day == 3 and $wday == 5) {                                   #Friday before July 4
     return 'Independence Day Observed';
@@ -157,10 +157,6 @@ Wrapper around holidays function per the API specification. See L<Date::Holidays
 =cut
 
 sub nyse_holidays {return holidays(@_)};
-
-=head1 TODO
-
-This package assumes that Juneteenth will be observed when it falls on a weekend. However, in 2021 Juneteenth was not observed on Friday June 18th, 2021. The next weekend Juneteenth will be in June 2027.
 
 =head1 SEE ALSO
 
