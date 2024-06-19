@@ -62,10 +62,6 @@ Returns a hash reference containing all of the holidays in the specified year. T
 
 Wrapper around holidays function per the API specification. See ["holidays1" in Date::Holidays](https://metacpan.org/pod/Date::Holidays#holidays1)
 
-# TODO
-
-This package assumes that Juneteenth will be observed when it falls on a weekend. However, in 2021 Juneteenth was not observed on Friday June 18th, 2021. The next weekend Juneteenth will be in June 2027.
-
 # SEE ALSO
 
 [Date::Holidays](https://metacpan.org/pod/Date::Holidays), [Date::Holidays::US](https://metacpan.org/pod/Date::Holidays::US)
