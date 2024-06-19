@@ -24,8 +24,6 @@ Per https://www.nyse.com/markets/hours-calendars these are the NYSE holidays.
     Thanksgiving Day
     Christmas Day
 
-It is unclear if Juneteenth were to fall on a weekend that it would be observed. Juneteenth was not observed on Friday June 18th, 2021 but the Law was enacted on June 17th, 2021.
-
 # METHODS
 
 ## is\_holiday
