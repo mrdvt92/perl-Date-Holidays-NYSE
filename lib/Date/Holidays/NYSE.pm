@@ -6,7 +6,7 @@ use POSIX (); #strftime to calculate wday
 use Date::Calc 5.0 (); #to calculate Easter and thus Good Friday
 
 our @EXPORT_OK = qw(is_holiday holidays is_nyse_holiday nyse_holidays);
-our $VERSION   = '0.02';
+our $VERSION   = '0.04';
 
 =head1 NAME
 
@@ -105,6 +105,8 @@ sub is_holiday {
     return 'Christmas Day';
   } elsif ($month == 12 and $day == 26 and $wday == 1) {                                 #Monday after December 25
     return 'Christmas Day Observed';
+  } elsif ($year == 2025 and $month == 1 and $day == 9) {                                #Day of Mourning for Jimmy Carter
+    return 'Day of Mourning for President Jimmy Carter';
   } else {
     return undef;
   }
